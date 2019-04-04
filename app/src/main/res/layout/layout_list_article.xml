@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginStart="6dp"
+    android:layout_marginEnd="6dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_list_article"
+        android:padding="8dp">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:maxLines="2"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:textColor="@color/color_text_article_title"
+                android:textSize="@dimen/text_large"
+                android:layout_toStartOf="@id/imageView"/>
+
+            <TextView
+                android:id="@+id/tvIsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_article_subtitle"
+                android:layout_marginEnd="8dp"
+                android:textSize="@dimen/text_regular"
+                android:layout_marginStart="4dp"
+                android:layout_toStartOf="@id/imageView"
+                android:layout_below="@id/tvTitle"
+                android:textStyle="normal"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:textColor="#299AF6"
+                android:textSize="@dimen/text_mini"
+                android:layout_marginStart="4dp"
+                android:layout_toStartOf="@id/imageView"
+                android:layout_below="@id/tvIsi"
+                android:textStyle="normal"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            tools:ignore="ContentDescription"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

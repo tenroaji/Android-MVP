@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "lagecong.com.mvp"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+//        resValue("string", "app_url", (project.findProperty("APP_BASE_URL") ?: ""))
+//        resValue("string", "app_dtcms_param", (project.findProperty("DTCMS_PARAM") ?: ""))
+//        resValue("string", "app_dtcms_key", (project.findProperty("DTCMS_KEY") ?: ""))
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:' + rootProject.supportLibraryVersion
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha3'
+//    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:exifinterface:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:transition:$rootProject.supportLibraryVersion"
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
+    //room for kotlin (kapt)
+    implementation "android.arch.persistence.room:runtime:$rootProject.roomVersion"
+    implementation 'com.andrognito.kerningview:kerningview:1.1.0'
+    implementation "com.android.support:customtabs:$rootProject.supportLibraryVersion"
+    kapt "android.arch.persistence.room:compiler:$rootProject.roomVersion"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

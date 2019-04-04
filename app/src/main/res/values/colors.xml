@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#032741</color>
+    <color name="colorAccent">#299AF6</color>
+    <color name="colorBackgroundDark">#022E4F</color>
+    <color name="colorActionRipple">#2388da</color>
+    <color name="colorRipleGrey">#e9e9e9</color>
+    <color name="colorMaskGrey">#d6d9da</color>
+    <color name="color_text_article_subtitle">#B323313B</color>
+    <color name="color_text_article_title">#23313B</color>
+    <color name="colorBackgroundDarkTransparent">#33032741</color>
+    <color name="colorBackgroundSliderTextTransparent">#9D022E4F</color>
+    <color name="basicBackground">#f7f8fa</color>
+</resources>

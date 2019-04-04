@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_mini">12sp</dimen>
+    <dimen name="text_regular">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_xlarge">20sp</dimen>
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="slider_margin">8dp</dimen>
+    <dimen name="app_toolbar_height">48dp</dimen>
+    <dimen name="image_slider_offset">64dp</dimen>
+    <dimen name="image_inisial">48dp</dimen>
+
+</resources>

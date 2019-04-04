@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVP</string>
+    <string name="app_dtcms_param">dtcmskey</string>
+    <string name="app_dtcms_key">85b60f29abdf51572d48aa4afa18bf034fe745a2</string>
+    <string name="app_url">http://128.199.250.96/api/v2/</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="text_memuat_gambar">load</string>
+</resources>
