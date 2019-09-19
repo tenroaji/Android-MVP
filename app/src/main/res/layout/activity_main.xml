@@ -13,7 +13,7 @@
               android:layout_toRightOf="@+id/textUser"/>
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:text="Password"
+              android:text="PASSWORD"
               android:layout_margin="16dp"
               android:id="@+id/textPassword"
               android:layout_below="@id/textUser"
@@ -27,5 +27,19 @@
     android:layout_below="@id/editPassword"
             android:id="@+id/mLogin"
     android:text="LOGIN"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:id="@+id/textHasil"
+            android:layout_centerInParent="true"/>
+
+    <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:id="@+id/progresBar"/>
+
 
 </RelativeLayout>

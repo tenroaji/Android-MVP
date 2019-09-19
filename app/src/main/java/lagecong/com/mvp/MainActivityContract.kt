@@ -2,7 +2,9 @@ package lagecong.com.mvp
 
 interface MainActivityContract {
     interface View {
-        fun showToast(succes:Boolean)
+        fun showLoading(show:Boolean)
+        fun showData(data:String)
+        fun showToast()
         fun setPresenter(presenter:Presenter)
     }
 
