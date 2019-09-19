@@ -3,7 +3,9 @@ package lagecong.com.mvp
 import android.content.Context
 import android.os.Handler
 import android.text.TextUtils
-
+/**
+ * Created by Andi Tenroaji Ahmad on 9/20/2019.
+ */
 class MainActivityPresenter(context: Context, private val view:MainActivityContract.View):MainActivityContract.Presenter{
 
     init{

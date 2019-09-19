@@ -6,8 +6,10 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-
-class MainActivity : AppCompatActivity(),MainActivityContract.View {
+/**
+ * Created by Andi Tenroaji Ahmad on 9/20/2019.
+ */
+open class MainActivity : AppCompatActivity(),MainActivityContract.View {
 
     var mPresenter : MainActivityContract.Presenter? = null
 
